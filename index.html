@@ -1,4 +1,157 @@
-<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    .music-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 20px; /* Adjust this value to increase or decrease the roundness */
+        padding: 10px;
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .music-player:hover {
+        transform: translateX(-150px);
+    }
+
+    .music-controls i {
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .search-input {
+        width: 80%;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .search-btn {
+        padding: 5px 10px;
+        background-color: #444;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Rounded top corners for the image */
+    .music-player img {
+        border-radius: 50%; /* Round the image */
+        width: 50%; /* Half the size */
+        display: block;
+        margin: 0 auto 10px; /* Center the image and add some margin */
+    }
+</style>
+</head>
+<body>
+
+<div class="music-player">
+    <img src="download (9).png" alt="Image">
+    <div class="music-controls">
+        <i class="fas fa-backward" id="backward"></i>
+        <i class="fas fa-pause" id="pause"></i>
+        <i class="fas fa-forward" id="forward"></i>
+    </div>
+    <input type="text" class="search-input" placeholder="Search for music">
+    <button class="search-btn"><i class="fas fa-search"></i></button>
+</div>
+
+<script>
+// Function to search for tracks on Spotify
+function searchSpotify(query) {
+    const clientId = 'YOUR_CLIENT_ID'; // Your Spotify client ID
+    const accessToken = 'YOUR_ACCESS_TOKEN'; // Your Spotify access token (obtained through authentication)
+    const apiUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track`;
+
+    fetch(apiUrl, {
+        headers: {
+            'Authorization': `Bearer ${accessToken}`
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Process search results and display them in your application
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error searching Spotify:', error);
+    });
+}
+
+// Example usage: Search for tracks
+searchSpotify('Despacito');
+
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* Style for the navigation bar */
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Style for the links inside the navigation bar */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        /* Style for the links on hover */
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="section">
+        <a href="#home">Home</a>
+    </div>
+    <div class="section">
+        <a href="#about">About</a>
+    </div>
+    <div class="section">
+        <a href="#services">Services</a>
+    </div>
+    <div class="section">
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- Your website content goes here -->
+
+</body>
+</html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,15 +159,16 @@
     <title>Your AWS Website</title>
   <style>
 body {
-  background-image: url('abstract-3d-chromebook-wallpaper.jpg');
+  background-image: url('360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 </style>
-    <body>
-        
+
+</html>
+
     </body>
 </head>
 <center body>
@@ -32,12 +186,24 @@ body {
 </form>
 </body>
 <body>
+    
+     <body>
+    
+     </body>
 
-<center body>
-     <section>
+<body>
+     <body>
+         <head>
+              <style type="text/css">
+              body {
+                  text-align : left;
+              }
+              
+          </style>
+         </head>
         <h2>Mechanical Engineering - Rube Goldburg Machine (9/8/23-9/15/23)</h2>
         <p>My team and i worked on Tinker-Cad to create a general idea of what we wanted to do for our engineering project. We designed our project to make the marble start at the top and then follow the road down and then push the hotwheel to pop the balloon. For the design i did most of it but we had many difficulties.</p>
-    </section>
+         
 </body>
    
 <center body>
@@ -53,28 +219,58 @@ body {
 </body>
 <body>
     <section>
-        <h2>Computer Engineering - Computer Disection</h2>
+        <h2>Computer Engineering - Computer Disection (9/29/23)</h2>
         <p>For this project we had to dissasemble a desktop and figure out how to assemble it again, it was fun to do it and to be able to build it back again because i really love to build pcs.For this unit, computer engineering, our main project was disecting a computer. Following the directions given on Google Classroom, we identified pieces and cables in the computer that we needed to detach in a certain order, and after a bit of trial and error, we managed to completely dissassemble and then re-assemble the computer! Only thing being, it didn't actually turn on when we were done, though we don't really know if it was supposed to work anyway.</p>
         <img width="300" height="300" src="IMG_7167.jpg"></img>
     </section>
 </body>
 <body>
     <section>
-        <h2>Bioengineering - Hand</h2>
+        <h2>Bioengineering - Hand (10/3/23)</h2>
         <p>We're starting a bioengineering unit now. We saw some pretty cool videos on the uses of bioengineering, such silicone artificial heart and the robot cheetah.
 
-Our main project this time was making a prosthetic hand out of cardboard, rubber bands, and string. It ended up being a bit of a tricky project, because our hand wasn't exactly simple or elegent. We didn't use string but rather the metal wire that Duncan brought, which made it look cool but kind of janky, unfortunately.</p>
+Our main project this time was making a prosthetic hand out of cardboard, rubber bands, and string. It ended up being a bit of a tricky project, because our hand wasn't exactly simple or elegent. We didn't use string but rather the metal wire that Duncan brought, which made it look cool but kind of janky, unfortunately.
+-Today we decided to work on a prosthenic arm. The context behind this was that we wathed a video about how prsthenic arms could help humans in the real world. Although, if there is a malfunction, they could hurt really bad or the subject and the person doing the action. Me and my partner were taking the easy but simple approach, which meant that we used cardboard, but we traced our hands onto it and made the fingers a bit longer. After that, we added rubber bands on each bending part of each finger, and then after that we decided to make string to attach all of the fingers and we were able to pick up the water bottle in the end.</p>
+    <img width="450" height="500" src="Screenshot 2023-10-06 11.23.22 AM.png"></img>
     </section>
     
 </body>
 <body>
     <section>
         <h2>Aerodynamics - Bottle Rockets</h2>
-        <p>For our aerodynamics unit, we did another classic science project: bottle rockets! This turned out to be quite a bit more intensive than I thought it would be, and there were definitely more details than I there would be. For example: how to attach the parachute, or how to attach the cap, or how to attach the fins. There were many different ways we could do each thing, but through brainstorming and a bit of trial and error, Duncan and I created a pretty neat rocket with a plastic bag parachute inside a bottle nose, diagonally-placed fins, and quite a bit of super glue.</p>
+        <p>For our aerodynamics unit, we did another classic science project: bottle rockets! This turned out to be quite a bit more 
+        intensive than I thought it would be, and there were definitely more details than I there would be. For example: how to 
+        attach the parachute, or how to attach the cap, or how to attach the fins. There were many different ways we could do each thing, 
+        but through brainstorming and a bit of trial and error, Duncan and I created a pretty neat rocket with a plastic bag parachute 
+        inside a bottle nose, diagonally-placed fins, and quite a bit of super glue.</p>
+        <img width="450" height="500" src="Screenshot 2023-10-26 11.47.13 AM.png"></img>
     </section>
 </body>
+<body>
+    <section>
+        <h2>Bottle Filter</h2>
+        <p>This week we learned about environmental engineering. First, we went over slides and took notes about enviornmental engineering and the many features of it. It consists of the integration of science and engineering principles to improve the natrual environment to provide healthy water, air, and land for human habitation and for other organisms, and to remediate pollution sites. Our activity for the unit was to create a water filter that could filter nasty water into somewhat clear water (picture below). First, we got a bottle and put cotton balls, sand, and then some rocks, with the cotton balls at the bottom and the rocks at the top. We got a scooper and we dumped the dirty water into our bottle, with a cup on the bottom that collected the filtered water. We noticed that the cotton balls got dirtier over time as water passed through. We ended up with somewhat clear water, but after trying to keep filtering the water, it just got dirtier, so we stopped. The cotton balls were probably dirty, which is what made it fail. Images are below. That's all for today!</p>
+        <img width="450" height="500" src="WaterFilter.jpg"></img>
+        <source src="filter.mp4" type="video/mp4" />   
+    </section>
+    
+</body>
+
+<body>
+    <h2>Bridge Project</h2>
+    <p>The weight of our bridge was 32.7 grams.
+The weight held by our bridge was 447 grams.
+The ratio of weight of bridge to weight held was 1:13.7
+The heaviest part of our bridge was the edges or sides of our bridge. We made those the heaviest because it will distribute the tension force from the bucket and the gravitational force. Stacking the spaghetti sticks on top of each other mostly made the weight of the bridge.
+The design of our bridge mostly came from our minds. However, we also got inspiration on the internet of other bridges to see how a bridge can hold up and function. We saw that these bridges often distributed their weight in one way or another. Therefore we tried to create a bridge that is even in the weight.
+The design of the bridge was not what we intended and it was worse than we expected since our prototype of the bridge was better at holding the weight than the actual product.
+The point of failure of our bridge was not stabilizing the middle of the bridge. This was the expected weak point since we saw that the bridge was bending too much when we held it.
+I can try to put more spaghetti's to stabilize the bridge since it can snap in the middle. However, the weight of the middle can still prolong points of failure.</p>
+<img width="500" height="300" src="spaghettibridge.jpg"></img>
+</body>
+
     <footer>
-        &copy; Welcome to the Next generation of A.I...
+      
     </footer>
 </body>
 </html>
